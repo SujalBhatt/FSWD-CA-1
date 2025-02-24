@@ -1,0 +1,32 @@
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.team-member {
+  flex: 1 1 45%;
+  max-width: 400px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00796b, #004d40);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.member-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.member-title {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}

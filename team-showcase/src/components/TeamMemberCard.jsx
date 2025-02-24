@@ -1,23 +1,21 @@
-import React from "react"
+import React from "react";
+import './TeamMemberCard.css';
 
-const TeamMemberCard = ({data}) => {
-    console.log(data)
+const TeamMemberCard = ({ data }) => {
     return (
-        <div>
-            {
-                data.length > 0 ? (
-                    data.map((el,i) => (
-                        <div key={i}>
-                            <h1>Team Member's Name: {el.name}</h1>
-                            <h1>Job Title: {el.title}</h1>
-                        </div>
-                    ))
-                ):(
-                    <p>Loading...</p>
-                )
-            }
+        <div className="team-container">
+            {data.length > 0 ? (
+                data.map((el, i) => (
+                    <div key={i} className="team-member">
+                        <h2 className="member-name">{el.name}</h2>
+                        <p className="member-title">{el.title}</p>
+                    </div>
+                ))
+            ) : (
+                <p>Loading...</p>
+            )}
         </div>
-    )
+    );
 }
 
-export default TeamMemberCard
+export default TeamMemberCard;

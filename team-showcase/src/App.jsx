@@ -1,14 +1,18 @@
-import { useState } from 'react'
+import React from 'react';
+import './App.css';
+import TeamMemberCard from "./components/TeamMemberCard";
 
-import './App.css'
-import TeamMemberCard from "./components/TeamMemberCard"
-const data = [{name: "Sujal", title: "Engineer"}, {name: "Kailash", title: "Finance"}]
+const data = [
+  { name: "Sujal", title: "Engineer" },
+  { name: "Kailash", title: "Finance" }
+];
+
 function App() {
   return (
-    <>
-      <TeamMemberCard data = {data}/>
-    </>
-  )
+    <div className="app">
+      <TeamMemberCard data={data} />
+    </div>
+  );
 }
 
-export default App
+export default App;
